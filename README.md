@@ -1,15 +1,15 @@
-# Domain lookup tool in Python
+# Pythonda Domen ma'lumotlarini qidiruvchi dastur
 
-## Setup
+## O'rnatish uchun
 
 * pip install -r requirements.txt
 
-## Run
+## Ishlatish uchun
 
 * python main.py (mac/linux: python3 main.py)
 
-<img src="admin/main.png">
+<img src="admin/main_uz.png">
 
-## Libraries
+## Kutubxonalar
 
 * python-whois

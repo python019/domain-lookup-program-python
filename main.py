@@ -1,17 +1,17 @@
 import whois as pywho
 import time as t
 
-search = input("Which domain lookup?: ")
+search = input("Qaysi domenni qidirmoqchisiz?: ")
 
 
 # domain name
 t.sleep(0.35)
-print("   Domain name:", search)
+print("   Domain nomi:", search)
 
 print('''   -------------------''')
 
 # creation date
-print("   Company:", pywho.whois(search).org)
+print("   Asoschi kompaniya:", pywho.whois(search).org)
 t.sleep(0.35)
 
 print('''   -------------------''')
@@ -20,13 +20,13 @@ print('''   -------------------''')
 try:
     for x in pywho.whois(search).creation_date:
         t.sleep(0.15)
-        print("   Creation date:", x)
+        print("   Tashkil etilgan sanasi:", x)
 except TypeError:
-    print("   Creation date:", pywho.whois(search).creation_date)
+    print("   Tashkil etilgan sanasi:", pywho.whois(search).creation_date)
     
 print('''   -------------------''')
 
 t.sleep(0.35)
 for content in pywho.whois(search).emails:
     t.sleep(0.15)
-    print("   Emails:", content)
+    print("   Emaillar:", content)
